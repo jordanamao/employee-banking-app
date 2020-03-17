@@ -1,0 +1,19 @@
+nav {
+  float: center;
+  padding: 1em 1em;
+  margin: 1.5em;
+
+
+}
+
+
+.navbar-brand{
+  margin: 10px;
+}
+
+.mynavbar {
+  position: relative;
+  width: 200px;
+
+  background-size: contain;
+}

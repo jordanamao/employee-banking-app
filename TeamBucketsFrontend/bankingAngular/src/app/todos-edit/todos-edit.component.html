@@ -1,0 +1,27 @@
+  <form [formGroup] = "angForm" class="col-lg-6 mx-auto" (ngSubmit)= "updateTodo(description.value, dueDate.value, status.value, priority.value)">
+    <div class="form-group">
+      <label class="col-lg-4">Todo:</label>
+      <input type="text" class="col-lg-7 form-control d-inline-block" formControlName="description" #description [(ngModel)]="todo.description"/>
+    </div>
+    <div class="form-group">
+      <label class="col-lg-4">Priority:</label>
+      <select class="form-control col-lg-7 d-inline-block" formControlName="priority" #priority [(ngModel)]="todo.priority">
+        <option value="1">High</option>
+        <option value="2">Medium</option>
+        <option value="3">Low</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="col-lg-4">Due Date:</label>
+      <input type="date" class="form-control col-lg-7 d-inline-block" placeholder={{todo.dueDate}} formControlName="dueDate" #dueDate [(ngModel)]="todo.dueDate" />
+    </div>
+    <div class="form-group">
+      <label class="col-lg-4">Status:</label>
+      <select class="form-control col-lg-7 d-inline-block" formControlName="status" #status [(ngModel)]="todo.status">
+        <option value="true">&#10004;</option>
+        <option value="false">&#10060;</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-danger">Edit Task</button>
+  </form>
+  

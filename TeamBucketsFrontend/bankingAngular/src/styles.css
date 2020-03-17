@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*  Off white - #f7f7f7    yellowish - #fef5dc */
+
+body{
+  background-color: #f7f7f7;
+}
+
+.divider{
+  width:10px;
+  height:auto;
+  display:inline-block;
+}
+
+h2 {
+
+  text-align: center;
+
+}
+
+
+
